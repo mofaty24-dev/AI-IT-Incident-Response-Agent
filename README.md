@@ -1,1 +1,1 @@
-# AI-IT-Insident-Response-Agent
+# AI-IT-Incident-Response-Agent
