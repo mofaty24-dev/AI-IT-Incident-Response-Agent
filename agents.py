@@ -1,16 +1,3 @@
-"""
-workers.py  -  Owner: AI Engineer 1
-===================================
-(Gemini's plan called this file agents.py. It is renamed because a local file named
-agents.py would shadow the OpenAI Agents SDK package `agents` and break every import.)
-
-SDD sections: Incident Orchestrator, Account / Device / Network Investigators,
-orchestrator-workers pattern, parallelization (asyncio.gather), reliability helper.
-
-LLM-orchestrated : the Incident Orchestrator decides WHICH workers are needed (InvestigationPlan).
-Code-orchestrated: Python runs the chosen workers concurrently, checks that every finding is
-                   backed by a real tool call, and falls back to fixed rules if the LLM fails.
-"""
 import asyncio
 import time
 from typing import Optional
